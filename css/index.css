@@ -1,0 +1,167 @@
+.page{
+    /* display: flex;
+    flex-direction: column; */
+
+    margin: auto;
+    /* max-width: 1100px; */
+    max-width: 68rem;
+}
+
+
+body{
+    background: rgb(16,92,255);
+    background: linear-gradient(90deg, rgba(16,92,255,1) 0%, rgba(65,141,255,1) 23%, rgba(0,192,255,1) 51%, rgba(0,212,255,1) 100%);
+}
+
+
+
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+}
+h3{
+    font-family: 'Ubuntu', sans-serif;
+}
+a{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 5rem;
+
+    color: rgb(255, 255, 255);
+}
+.header-nav a{
+    display: inline-block;
+    /* margin: .5rem; */
+    padding: .5rem;
+    /* font-size: 1.25rem; */
+    font-weight: 700;
+    /* font-family: Graphik,sans-serif; */
+
+    transition: transform .1s;
+    color: rgb(255, 255, 255);
+}
+.header-nav a:hover{
+    color:#6570ff;
+    transform: scale(1.5);
+    /* font-size: 1.5rem; */
+}
+.header h2{
+    margin: 1rem;
+    /* font-family: IBMPlexSans, Arial, sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Inspiration', cursive; */
+    /* font-family: 'Parisienne', cursive; */
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+
+.myinfo{
+    display: flex;
+    margin: 1rem 2rem;
+}
+.myinfo > img{
+    /* margin: 0 1rem; */
+    width: 15rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 4rem rgb(255, 255, 255);
+}
+
+
+
+.myinfo-about{
+    display: flexbox;
+    
+    /* margin: 0 1rem; */
+    margin-left: 1rem;
+    padding: .25rem 1rem;
+
+    width: 100%;
+
+    background-color: white;
+    border-radius: 1rem;
+
+    box-shadow: 0px 0px 4rem rgb(255, 255, 255);
+}
+.myinfo-about> h3{
+    margin: .5rem .5rem;
+}
+
+
+
+.myinfo-mod-block{
+    display: table;
+    margin: .25rem;
+    padding: .5rem .5rem;
+    padding-top: .25rem;
+    
+    background-color: rgb(240, 240, 240);
+    border-radius: .5rem;
+}
+
+
+
+.myinfo-technologies > h3{
+    color: rgb(77 198 30);
+}
+.myinfo-lang > h3{
+    color: rgb(211 79 255);
+}
+
+
+
+
+.projects{
+    margin: 1rem 2rem;
+    padding: .5rem;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+.projects > h3{
+    margin: 0 .5rem;
+}
+.projects-pet-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-pet-item{
+    margin: .5rem;
+    padding: .5rem;
+    padding-top: 0rem;
+
+    background-color: rgb(226 248 255);
+    border-radius: .5rem;
+}
+.projects-pet-item > a{
+    display: table;
+
+    margin: auto;
+
+    color: #6f65ff;
+    font-size: 1.25rem;    
+}
+.projects-pet-item img{
+    width: 28.5rem;
+}
+
+
+
+
+
+.block-contacts{
+    display: none;
+}

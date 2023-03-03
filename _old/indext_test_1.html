@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index_test_1.css">
+    <title>Document</title>
+    
+</head>
+<body>    
+    <canvas id="gameCanvas" width="1200" height="800"></canvas>
+
+    <script>
+        // ;(function () {
+        //       const canvas = document.getElementById('gameCanvas')
+        //         const ctx = canvas.getContext('2d')
+        //     })()
+// initialize config variables here
+let canvas, ctx
+
+// setup config variables and start the program
+function init () {
+  canvas = document.getElementById('gameCanvas')
+  ctx = canvas.getContext('2d')
+  
+  // outlined square X: 50, Y: 35, width/height 50
+  ctx.beginPath()
+  ctx.strokeRect(50, 35, 50, 50)
+
+  // filled square X: 125, Y: 35, width/height 50
+  ctx.beginPath()
+  ctx.fillRect(125, 35, 50, 50)
+
+  // inside the init function
+
+// filled, outlined square X: 200, Y: 35, width/height 50
+ctx.beginPath()
+ctx.strokeStyle = 'red'
+ctx.fillStyle = 'blue'
+ctx.lineWidth = 5
+ctx.rect(200, 35, 50, 50)
+ctx.fill()
+ctx.stroke()
+}
+
+// wait for the HTML to load
+document.addEventListener('DOMContentLoaded', init)
+
+        </script>
+</body>
+</html>
