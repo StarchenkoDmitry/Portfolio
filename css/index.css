@@ -93,7 +93,8 @@ a{
     border-radius: 1rem;
 }
 .myinfo-about> h3{
-    margin: .5rem .5rem;
+    margin: .25rem .5rem;
+    margin-bottom: 0;
 }
 
 .mod-block-shadow{
