@@ -1,6 +1,6 @@
 const Elem_contacts = document.getElementById("block-contacts");
 
-openContacts();
+// openContacts();
 
 Elem_contacts.onclick = e =>{
     if(e.target === Elem_contacts){
@@ -18,23 +18,8 @@ function closeContacts(){
     Elem_contacts.classList.add("block-contacts-dis");
 }
 
-// window.onresize = e =>{
-// }
-// // c();
-// function c(){
-//     Elem_contacts.classList.remove("mod-blur");
-//     setTimeout(v,500);
-// }
-// function v(){
-//     Elem_contacts.classList.add("mod-blur");
-//     setTimeout(c,500);
-// }
-//style="display: none;"     style="display: none;"
-
-
-function copyEmail(){
-    const str_email = "starchenkodmitrypavlovich@gmail.com";
-    navigator.clipboard.writeText(str_email).
+function copyToClipboard(str){
+    navigator.clipboard.writeText(str).
     then(() => {
         //Получилось!
     })
@@ -42,13 +27,46 @@ function copyEmail(){
         console.log('Something went wrong', err);
     });
 }
-function copyPhone(){
-    const str_phone = "+38097654321";
-    navigator.clipboard.writeText(str_phone).
-    then(() => {
-        //Получилось!
-    })
-    .catch(err => {
-        console.log('Something went wrong', err);
-    });
+
+const listContacts=[
+    {
+        nameSite:"Facebook",
+        fullUrl: "https://www.facebook.com",
+        profileName:"dimkaTruba"
+    },
+    {
+        nameSite:"Instagram",
+        fullUrl: "https://www.instagram.com",
+        profileName:"@dimkaTruba"
+    },
+    {
+        nameSite:"Twitter",
+        fullUrl: "https://twitter.com",
+        profileName:"@dimkaTruba"
+    },
+    {
+        nameSite:"Github",
+        fullUrl: "https://github.com/StarchenkoDmitry",
+        profileName:"StarchenkoDmitry"
+    },
+    {
+        nameSite:"LinkedIn",
+        fullUrl: "https://www.linkedin.com",
+        profileName:"StarchenkoDmitry"
+    },
+]
+
+
+function createListCont(cont){
+    return `<div class="contacts-item">
+        <span><a href="${cont.fullUrl}">${cont.nameSite}</a> ${cont.profileName}</span>
+        <button onclick="copyToClipboard('${cont.profileName}');">Copy</button>
+    </div>`;
 }
+
+const elList = document.querySelector(".contacts-list")
+
+
+Array.from(listContacts).forEach(e=>{
+    elList.innerHTML+= createListCont(e);
+});

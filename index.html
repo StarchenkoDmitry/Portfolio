@@ -29,8 +29,8 @@
                 <a href=""><img class="header-nav-icon" src="icons/facebook.png" alt=""></a>
                 <a href=""><img class="header-nav-icon" src="icons/instagram.png" alt=""></a>
                 <a href=""><img class="header-nav-icon" src="icons/twitter.png" alt=""></a>
-                <a href=""><img class="header-nav-icon" src="icons/github.png" alt=""></a>
-                <a href=""><img class="header-nav-icon" src="icons/linkedin.png" alt=""></a>
+                <a href="https://github.com/StarchenkoDmitry" target="_blank"><img class="header-nav-icon" src="icons/github.png" alt=""></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="header-nav-icon" src="icons/linkedin.png" alt=""></a>
             </nav>
         </header>
         <section class="myinfo">
@@ -49,14 +49,14 @@
                     <span>TypeScript</span>
                     <span>React</span>
                     <span>Eleventy</span>
-                    <span>Node.js</span>
+                    <span>Node.JS</span>
                     <span>WordPress</span>
                 </div>
                 <div class="myinfo-lang myinfo-mod-block">
                     <h3>Language</h3>
-                    <p>Russian native</p>
-                    <p>Ukrainian native</p>
-                    <p>Englist A1</p>
+                    <span>Russian native</span>
+                    <span>Ukrainian native</span>
+                    <span>Englist A1</span>
                 </div>
             </div>
         </section>
@@ -65,14 +65,10 @@
             <div class="projects-pet-list">
                 <div class="projects-pet-item">
                     <header>
-                        <a href="https://starchenkodmitry.github.io/Pet3_Paint">Paint</a>
-                        <a href="">Git</a>
+                        <a href="https://starchenkodmitry.github.io/Pet3_Paint">Site Paint</a>
+                        <a href="https://github.com/StarchenkoDmitry/Pet3_Paint">Github</a>
                     </header>
                     <a href="https://starchenkodmitry.github.io/Pet3_Paint"><img src="img/pets/starchenkodmitry.github.io_Pet3_Paint_.png" alt=""></a>
-                </div>
-                <div class="projects-pet-item">
-                    <a href="https://starchenkodmitry.github.io/Pet3_Paint">Paint</a>
-                    <img  src="img/pets/starchenkodmitry.github.io_Pet3_Paint_.png" alt="">
                 </div>
             </div>
         </section>
@@ -80,11 +76,16 @@
     <div id="block-contacts" class="block-contacts-dis">
         <div class="contacts">
             <h2>Contacts</h2>
-            <span>Phone <a href="tel:+38097654321">+380 97654321</a></span>
-            <button onclick="copyPhone();">Copy</button>
-            <br>
-            <span>Email <a href="mailto:starchenkodmitrypavlovich@gmail.com">starchenkodmitrypavlovich@gmail.com</a></span>
-            <button onclick="copyEmail();">Copy</button>
+            <div class="contacts-list">
+                <div class="contacts-item">
+                    <span>Phone <a href="tel:+38097654321">+380 97654321</a></span>
+                    <button onclick="copyToClipboard('+38097654321');">Copy</button>
+                </div>
+                <div class="contacts-item">
+                    <span>Email <a href="mailto:starchenkodmitrypavlovich@gmail.com">starchenkodmitrypavlovich@gmail.com</a></span>
+                    <button onclick="copyToClipboard('starchenkodmitrypavlovich@gmail.com');">Copy</button>
+                </div>
+            </div>            
         </div>
     </div>
 </body>
