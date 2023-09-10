@@ -1,4 +1,3 @@
-
 const pets=[_pet16];
 
 const _pet16 = {
@@ -12,6 +11,6 @@ const _pet16 = {
 }
 
 const _pet10= {
-
+    
 }
 
