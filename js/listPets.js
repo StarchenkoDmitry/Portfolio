@@ -15,4 +15,3 @@ const _pet10= {
 }
 
 //test6
-//add text 34634634
