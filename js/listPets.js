@@ -29,3 +29,7 @@ const _pet = {
 }
 
 const pets=[_pet16,_pet3];
+
+
+const List = document.querySelector(".works-list");
+// console.log(List);
