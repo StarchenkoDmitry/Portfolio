@@ -1,4 +1,3 @@
-const pets=[_pet16];
 
 const _pet16 = {
     name:"File Sharing Service",
@@ -9,6 +8,7 @@ const _pet16 = {
     github:"",
     description:"",
 }
+const pets=[_pet16];
 
 const _pet10= {
     
