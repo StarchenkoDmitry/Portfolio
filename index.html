@@ -14,23 +14,138 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/resetcss.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/customstyle.css">
     
+    <script defer src="js/listPets.js"></script>
     <script defer src="js/index.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
     <div class="page">
         <header class="header">
-            <h2 id="myname">Starchenko Dmitry</h2>
+            <!-- <h2 id="myname">Starchenko Dmitry</h2> -->
+            <h1 id="myname">Developer</h1>
+            <nav class="header__nav">
+                <button class="pf-btn-effect-1 contacts-btn" onclick="openContacts();">Contacts</button>
+                <a class="header-nav-url" href="https://github.com/StarchenkoDmitry" target="_blank">
+                    <img class="header-nav-icon" src="icons/github2.png" alt="">
+                </a>                
+            </nav>
+        </header>
+
+        <section class="pf-section-style1 info">
+            <h2 class="section_lable">About me</h2>
+            <img class="myphoto" src="img/itsima.jpg" alt="My image">
+            <div class="aboutme">
+                <p>Привет меня завут Дима. С детства меня интересовало то как работает компьютер и как создавать свои приложения.</p>
+                <p>Мой путь начался с изучения C/C++, это дало мне более детальное понимание как работает компьютер и ток как устроены другие языки программирования такие как Java, C# (мой любимый :D), JavaScript/TypeScript, Python, Go и другие.</p>
+                <p>В данный момент я стал больше интересоваться Web разработкой и развиваюсь в этом направлении, используя новые технологии которые нужны для создания новых IT продуктов.</p>
+            </div>
+        </section>
+        <section class="pf-section-style1 skills">
+            <h2 class="section_lable">Skills</h2>
+
+            <div class="technologies">
+                <div class="technologies_head">
+                    <span class="technologies_head_lable">Technologies</span>
+                </div>
+                <div class="technologies_body">
+                    <div>React JS</div>
+                    <div>Next JS</div>
+                    <div>Electron JS</div>
+                    <div>Node JS</div>
+                    <div>Express JS</div>
+                    <div>Nest JS</div>
+                </div>
+            </div>
+
+            <div class="programlanguages">
+                <div class="programlanguages_head">
+                    <span class="programlanguages_head_lable">Programing languages</span>
+                </div>
+                <ul>
+                    <li class="lg-javascript">JavaScript/TypeScript (ES6+)</li>
+                    <li class="lg-sql">SQL</li>
+                    <li class="lg-python">Python</li>
+                    <li class="lg-csharp">C# .NET</li>
+                    <li class="lg-cpp">C++</li>
+                </ul>
+            </div>
+
+            <div class="languages">
+                <div class="languages_head">
+                    <span class="languages_head_lable">Languages</span>
+                </div>
+                <ul>
+                    <li>Russian native</li>
+                    <li>Ukrainian native</li>
+                    <li>Englist A1</li>
+                </ul>
+            </div>
+            
+        </section>
+        <h2 class="works-tatle">works</h2>
+        <section class="works-menu">
+            
+        </section>
+        <section class="works-list">
+            
+            <div class="works__item">
+                <div class="works__item__head">
+                    <span class="name">File Sharing Service</span>
+                    <div class="right">
+                        <a class="link" href="" target="_blank" rel="noopener noreferrer">Site</a>
+                        <a class="link" href="https://github.com/StarchenkoDmitry/pet16_file_sharing_service" target="_blank" rel="noopener noreferrer">Github</a>
+                    </div>
+                </div>
+
+                <img class="img" src="img/pets/pet16.png" alt="">
+                <div class="footer">
+                    fotterok
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+
+
+    <div class="page2">
+
+        <!-- <a href="https://www.linkedin.com" target="_blank">
+            <img class="header-nav-icon" src="icons/linkedin.png" alt="">
+        </a> -->
+        <header class="header">
+            <h1 id="myname">Starchenko Dmitry</h1>
             <nav class="header-nav">
                 <div onclick="openContacts();" id="contacts-a">Contacts</div>
                 <a href=""><img class="header-nav-icon" src="icons/facebook.png" alt=""></a>
                 <a href=""><img class="header-nav-icon" src="icons/instagram.png" alt=""></a>
                 <a href=""><img class="header-nav-icon" src="icons/twitter.png" alt=""></a>
-                <a href="https://github.com/StarchenkoDmitry" target="_blank"><img class="header-nav-icon" src="icons/github.png" alt=""></a>
-                <a href="https://www.linkedin.com" target="_blank"><img class="header-nav-icon" src="icons/linkedin.png" alt=""></a>
+                <a href="https://github.com/StarchenkoDmitry" target="_blank">
+                    <img class="header-nav-icon" src="icons/github.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img class="header-nav-icon" src="icons/linkedin.png" alt="">
+                </a>
             </nav>
         </header>
         <section class="myinfo">
@@ -73,7 +188,7 @@
             </div>
         </section>
     </div>
-    <div id="block-contacts" class="block-contacts-dis">
+    <div id="block-contacts" class="block-contacts-dis2">
         <div class="contacts">
             <h2>Contacts</h2>
             <div class="contacts-list">

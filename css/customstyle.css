@@ -1,0 +1,46 @@
+*{
+    
+    --section1-br-r1: 2em;
+    --blockInSection1-r1: 1.5em;
+
+
+    --lg-level-javascript: 87%;
+    --lg-level-sql: 30%;
+    --lg-level-python: 20%;
+    --lg-level-csharp: 80%;
+    --lg-level-cpp: 40%;
+    --lg-level-: 0%;
+}
+
+.pf-section-style1{
+    border: 1.5px solid #fff;
+    border-radius: var(--section1-br-r1);
+
+    -webkit-backdrop-filter: blur();
+    backdrop-filter: blur();
+    background-color: rgba(255,255,255,.37);
+}
+
+
+
+/* 
+.pf-btn-effect-1{
+    transition: all .1s;
+}
+.pf-btn-effect-1:hover{
+    transform: translateY(-.1em);
+}
+.pf-btn-effect-1:active{
+    transform: translateY(.2em);
+} */
+
+
+.pf-btn-effect-1{
+    transition: all .1s;
+}
+.pf-btn-effect-1:hover{
+    transform: scale(1.1);
+}
+.pf-btn-effect-1:active{
+    transform: scale(.9);
+}
