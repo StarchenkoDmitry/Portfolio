@@ -11,7 +11,7 @@ if(pet){
     document.querySelector("#img").src = pet.img;
 
     const right = document.querySelector(".right");
-    console.log(right);
+    
     if(pet.url){
         const a1 = document.createElement("a");
         a1.classList.add("link");

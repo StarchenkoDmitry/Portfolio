@@ -1,6 +1,11 @@
 const List = document.querySelector(".works-list");
 
 pets.forEach(e=>{
+    const url = location.origin + location.pathname+ 
+    "pet.html#"+e.nameProject;
+
+    console.log("URL: ",url)
+    
     const item = document.createElement("div");
     item.classList.add("works__item");
 
@@ -19,7 +24,7 @@ pets.forEach(e=>{
     item_right.classList.add("right");
     item_head.appendChild(item_right);
 
-    if(e.url){
+    if(e.url){        
         const a1 = document.createElement("a");
         a1.classList.add("link");
         a1.target="_blank";
