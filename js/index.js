@@ -1,72 +1,75 @@
-const Elem_contacts = document.getElementById("block-contacts");
 
-// openContacts();
+const List = document.querySelector(".works-list");
 
-Elem_contacts.onclick = e =>{
-    if(e.target === Elem_contacts){
-        closeContacts();
+pets.forEach(e=>{
+    const item = document.createElement("div");
+    item.classList.add("works__item");
+
+    const item_head = document.createElement("div");
+    item_head.classList.add("works__item__head");
+
+    item.appendChild(item_head);
+
+    const name = document.createElement("span");
+    name.classList.add("name");
+    name.innerText = e.name;
+    item_head.appendChild(name);
+
+
+    const item_right = document.createElement("div");
+    item_right.classList.add("right");
+    item_head.appendChild(item_right);
+
+    if(e.url){
+        const a1 = document.createElement("a");
+        a1.classList.add("link");
+        a1.target="_blank";
+        a1.href = e.url;
+        a1.innerText="Site";
+        item_right.appendChild(a1);
     }
-}
 
-function openContacts(){
-    Elem_contacts.classList.remove("block-contacts-dis");
-    Elem_contacts.classList.add("block-contacts");
-}
+    if(e.github){
+        const a2 = document.createElement("a");
+        a2.classList.add("link");
+        a2.target="_blank";
+        a2.href = e.github;
+        a2.innerText="Github";
+        item_right.appendChild(a2);
+    }
 
-function closeContacts(){
-    Elem_contacts.classList.remove("block-contacts");
-    Elem_contacts.classList.add("block-contacts-dis");
-}
+    const body = document.createElement("div");
+    body.classList.add("body");
+    item.appendChild(body);
 
-function copyToClipboard(str){
-    navigator.clipboard.writeText(str).
-    then(() => {
-        //Получилось!
-    })
-    .catch(err => {
-        console.log('Something went wrong', err);
+    const img = document.createElement("img");
+    img.classList.add("img");
+    if(e.img){ img.src=e.img; }
+    body.appendChild(img);
+    
+    const footer = document.createElement("div");
+    footer.classList.add("footer");
+    // footer.innerText ="test footer";
+    item.appendChild(footer);
+
+    const maxRenderTags = 3;
+
+    const tags = e.tags.slice(0,maxRenderTags);
+    tags.forEach(t=>{
+        const tag = document.createElement("div");
+        tag.classList.add("tag");
+        tag.innerText = `#${t}`;
+        footer.appendChild(tag);
     });
-}
+    const countOthers = e.tags.length - maxRenderTags;
+    if(countOthers>0){
+        const others = document.createElement("div");
+        others.classList.add("others");
+        others.innerText = `+${countOthers}`;
+        footer.appendChild(others);
+    }
 
-const listContacts=[
-    {
-        nameSite:"Facebook",
-        fullUrl: "https://www.facebook.com",
-        profileName:"dimkaTruba"
-    },
-    {
-        nameSite:"Instagram",
-        fullUrl: "https://www.instagram.com",
-        profileName:"@dimkaTruba"
-    },
-    {
-        nameSite:"Twitter",
-        fullUrl: "https://twitter.com",
-        profileName:"@dimkaTruba"
-    },
-    {
-        nameSite:"Github",
-        fullUrl: "https://github.com/StarchenkoDmitry",
-        profileName:"StarchenkoDmitry"
-    },
-    {
-        nameSite:"LinkedIn",
-        fullUrl: "https://www.linkedin.com",
-        profileName:"StarchenkoDmitry"
-    },
-]
+    // console.log(tags);
 
-
-function createListCont(cont){
-    return `<div class="contacts-item">
-        <span><a href="${cont.fullUrl}">${cont.nameSite}</a> ${cont.profileName}</span>
-        <button onclick="copyToClipboard('${cont.profileName}');">Copy</button>
-    </div>`;
-}
-
-const elList = document.querySelector(".contacts-list")
-
-
-Array.from(listContacts).forEach(e=>{
-    elList.innerHTML+= createListCont(e);
+    List.appendChild(item);
 });

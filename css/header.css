@@ -1,0 +1,45 @@
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+#myname{
+    color: #fff;
+    font-size: 1.75em;
+    /* font-family: 'Ubuntu', sans-serif; */
+    /* font-weight: 500; */
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+.header-nav-url{
+    margin: 0 .5em;
+    transition: all .2s;
+    user-select: none;
+    cursor: pointer;
+}
+.header-nav-url:hover{
+    transform: scale(1.5);
+}
+.header-nav-icon{
+    display: block;
+    width: 2.25em;
+    height: 2.25em;
+}
+
+
+.contacts-btn{
+    padding: .2em .5em;
+    font-size: 1.2em;
+
+    color: #fff;
+    background: none;
+
+    border-radius: .7em;
+    border: none;
+}
+.contacts-btn:hover{
+    background-color: #ffbce1;
+}

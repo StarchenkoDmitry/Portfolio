@@ -7,34 +7,18 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/resetcss.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/customstyle.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
     
     <script defer src="js/listPets.js"></script>
     <script defer src="js/index.js"></script>
+
     <title>Portfolio</title>
 </head>
 <body>
@@ -107,7 +91,7 @@
         </section>
         <section class="works-list">
             
-            <div class="works__item">
+            <!-- <div class="works__item">
                 <div class="works__item__head">
                     <span class="name">File Sharing Service</span>
                     <div class="right">
@@ -115,79 +99,24 @@
                         <a class="link" href="https://github.com/StarchenkoDmitry/pet16_file_sharing_service" target="_blank" rel="noopener noreferrer">Github</a>
                     </div>
                 </div>
-
-                <img class="img" src="img/pets/pet16.png" alt="">
+                <div class="body">
+                    <img class="img" src="img/pets/pet16.png" alt="">
+                </div>
                 <div class="footer">
-                    fotterok
+                    <div class="tag">ReactJS</div>
+                    <div class="tag">JavaScript</div>
+                    <div class="others">+5</div>
                 </div>
-            </div>
+            </div> -->
 
         </section>
     </div>
 
+    <div class="page-footer">
 
-
-
-    <div class="page2">
-
-        <!-- <a href="https://www.linkedin.com" target="_blank">
-            <img class="header-nav-icon" src="icons/linkedin.png" alt="">
-        </a> -->
-        <header class="header">
-            <h1 id="myname">Starchenko Dmitry</h1>
-            <nav class="header-nav">
-                <div onclick="openContacts();" id="contacts-a">Contacts</div>
-                <a href=""><img class="header-nav-icon" src="icons/facebook.png" alt=""></a>
-                <a href=""><img class="header-nav-icon" src="icons/instagram.png" alt=""></a>
-                <a href=""><img class="header-nav-icon" src="icons/twitter.png" alt=""></a>
-                <a href="https://github.com/StarchenkoDmitry" target="_blank">
-                    <img class="header-nav-icon" src="icons/github.png" alt="">
-                </a>
-                <a href="https://www.linkedin.com" target="_blank">
-                    <img class="header-nav-icon" src="icons/linkedin.png" alt="">
-                </a>
-            </nav>
-        </header>
-        <section class="myinfo">
-            <img class="mod-block-shadow" src="img/itsima.jpg" alt="My image">
-            <div class="myinfo-about mod-block-shadow">
-                <h3>About Me</h3>
-                <div class="myinfo-mod-block">
-                    <!-- <p>Hi My name is Dima</p> -->
-                    <p>Привет меня завут Дима. С детства меня интересовало то как работает компьютер и как создавать свои приложения.
-                        Мой путь начался с изучения C/C++, это дало мне более детальное понимание как работает компьютер и ток как устроены другие языки программирования такие как Java, C# (мой любимый :D), JavaScript/TypeScript, Python, Go и другие.
-                        В данный момент я стал больше интересоваться Web разработкой и развиваюсь в этом направлении, используя новые технологии которые нужны для создания новых IT продуктов.</p>
-                </div>
-                <div class="myinfo-technologies myinfo-mod-block">
-                    <h3>Technologies</h3>
-                    <span>JavaScript (ES6+)</span>
-                    <span>TypeScript</span>
-                    <span>React</span>
-                    <span>Eleventy</span>
-                    <span>Node.JS</span>
-                    <span>WordPress</span>
-                </div>
-                <div class="myinfo-lang myinfo-mod-block">
-                    <h3>Language</h3>
-                    <span>Russian native</span>
-                    <span>Ukrainian native</span>
-                    <span>Englist A1</span>
-                </div>
-            </div>
-        </section>
-        <section class="projects mod-block-shadow">
-            <h3>Pet projects</h3>
-            <div class="projects-pet-list">
-                <div class="projects-pet-item">
-                    <header>
-                        <a href="https://starchenkodmitry.github.io/Pet3_Paint">Site Paint</a>
-                        <a href="https://github.com/StarchenkoDmitry/Pet3_Paint">Github</a>
-                    </header>
-                    <a href="https://starchenkodmitry.github.io/Pet3_Paint"><img src="img/pets/starchenkodmitry.github.io_Pet3_Paint_.png" alt=""></a>
-                </div>
-            </div>
-        </section>
     </div>
+
+
     <div id="block-contacts" class="block-contacts-dis2">
         <div class="contacts">
             <h2>Contacts</h2>

@@ -1,14 +1,28 @@
+html{
+    font-size: 14px;
+}
 *{
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Comfortaa', cursive;
+}
+
+*{
+    --size-sm: 360px;
+    --size-dm: 460px;
+    --size-md: 720px;
+    --size-big: 1000px;
+    --size-superbig: 1200px;
     
     --section1-br-r1: 2em;
     --blockInSection1-r1: 1.5em;
 
 
-    --lg-level-javascript: 87%;
-    --lg-level-sql: 30%;
-    --lg-level-python: 20%;
+    --lg-level-javascript: 90%;
+    --lg-level-sql: 20%;
+    --lg-level-python: 10%;
     --lg-level-csharp: 80%;
-    --lg-level-cpp: 40%;
+    --lg-level-cpp: 35%;
     --lg-level-: 0%;
 }
 

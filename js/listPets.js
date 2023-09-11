@@ -1,3 +1,6 @@
+// const mongodb = "MongoDB";
+// const reactjs = "ReactJS";
+
 
 const _pet16 = {
     name:"File Sharing Service",
@@ -13,7 +16,7 @@ const _pet3 = {
     nameProject:"pet3_Paint",
     img:"img/pets/pet3.png",
     tags:["ReactJS","ExpressJS","TypeScript","MongoDB","Axios","MobX"],
-    url:"",
+    url:"https://starchenkodmitry.github.io/Pet3_Paint/",
     github:"https://github.com/StarchenkoDmitry/Pet3_Paint",
     description:"Это один из моих первых проектов в которых написал простой графический редактор на чистом JavaScript",
 }
@@ -28,8 +31,4 @@ const _pet = {
     description:"",
 }
 
-const pets=[_pet16,_pet3];
-
-
-const List = document.querySelector(".works-list");
-// console.log(List);
+const pets=[_pet3,_pet16,_pet3,_pet16,_pet16,_pet3,_pet3];
