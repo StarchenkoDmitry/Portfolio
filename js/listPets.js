@@ -1,7 +1,3 @@
-// const mongodb = "MongoDB";
-// const reactjs = "ReactJS";
-
-
 const _pet16 = {
     name:"File Sharing Service",
     nameProject:"pet16_file_sharing_service",
@@ -31,8 +27,9 @@ const _pet = {
     description:"",
 }
 
-const pets=[_pet3,_pet16,_pet3,_pet16,_pet16,_pet3,_pet3];
+// const pets=[_pet3,_pet16,_pet3,_pet16,_pet16,_pet3,_pet3];
 
+const pets=[_pet16,_pet3];
 
 
 console.log("origin:",window.location.origin);
