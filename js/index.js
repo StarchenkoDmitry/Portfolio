@@ -1,4 +1,3 @@
-
 const List = document.querySelector(".works-list");
 
 pets.forEach(e=>{
@@ -68,8 +67,6 @@ pets.forEach(e=>{
         others.innerText = `+${countOthers}`;
         footer.appendChild(others);
     }
-
-    // console.log(tags);
 
     List.appendChild(item);
 });

@@ -32,3 +32,10 @@ const _pet = {
 }
 
 const pets=[_pet3,_pet16,_pet3,_pet16,_pet16,_pet3,_pet3];
+
+
+
+console.log("origin:",window.location.origin);
+console.log("host:",window.location.host);
+console.log("href:",window.location.href);
+console.log("pathname:",window.location.pathname);
