@@ -404,6 +404,15 @@ body{
 }
 
 
+@media screen and (max-width: 1000px) {
+    .works__item{
+        width: 100%;
+    }
+    .works__item .body{
+        height:auto;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .works__item .body{
         height:auto;

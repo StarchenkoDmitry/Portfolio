@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,15 +15,18 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/customstyle.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/index.css">
     
-    <script defer src="js/listPets.js"></script>
+    <script defer src="js/petsList.js"></script>
+    <script defer src="js/contacts.js"></script>
     <script defer src="js/index.js"></script>
 
     <title>Portfolio</title>
 </head>
 <body>
     <div class="page">
+
         <header class="header">
             <!-- <h2 id="myname">Starchenko Dmitry</h2> -->
             <h1 id="myname">Developer</h1>
@@ -43,6 +47,7 @@
                 <p>В данный момент я стал больше интересоваться Web разработкой и развиваюсь в этом направлении, используя новые технологии которые нужны для создания новых IT продуктов.</p>
             </div>
         </section>
+
         <section class="pf-section-style1 skills">
             <h2 class="section_lable">Skills</h2>
 
@@ -85,10 +90,12 @@
             </div>
             
         </section>
-        <h2 class="works-tatle">works</h2>
+
+        <h2 class="works-tatle">works</h2>        
         <section class="works-menu">
             
         </section>
+
         <section class="works-list">
             
             <!-- <div class="works__item">
@@ -115,19 +122,18 @@
     <div class="page-footer">
 
     </div>
-
-
-    <div id="block-contacts" class="block-contacts-dis2">
+    
+    <div class="wrapper-contacts">
         <div class="contacts">
-            <h2>Contacts</h2>
+            <h2 class="contacts__title">Contacts</h2>
             <div class="contacts-list">
                 <div class="contacts-item">
-                    <span>Phone <a href="tel:+38097654321">+380 97654321</a></span>
-                    <button onclick="copyToClipboard('+38097654321');">Copy</button>
+                    <span>Phone <a href="tel:+79497372766">+79497372766</a></span>
+                    <button class="copy" onclick="copyToClipboard('+79497372766');">Copy</button>
                 </div>
                 <div class="contacts-item">
                     <span>Email <a href="mailto:starchenkodmitrypavlovich@gmail.com">starchenkodmitrypavlovich@gmail.com</a></span>
-                    <button onclick="copyToClipboard('starchenkodmitrypavlovich@gmail.com');">Copy</button>
+                    <button class="copy" onclick="copyToClipboard('starchenkodmitrypavlovich@gmail.com');">Copy</button>
                 </div>
             </div>            
         </div>

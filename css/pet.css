@@ -54,7 +54,7 @@ body{
     width: 80%;
     /* min-height: 260px; */
     /* height: 500px; */
-    border-radius: 2em;
+    border-radius: .5em;
 }
 .pet .stack{
     flex:1;

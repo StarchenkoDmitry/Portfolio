@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/customstyle.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/pet.css">
     
-    <script defer src="js/listPets.js"></script>
-    <!-- <script defer src="js/index.js"></script> -->
+    <script defer src="js/petsList.js"></script>
+    <script defer src="js/contacts.js"></script>
     <script defer src="js/pet.js"></script>    
     <title>Pet</title>
 </head>
@@ -62,6 +63,22 @@
 
         </div>
 
+    </div>
+
+    <div class="wrapper-contacts">
+        <div class="contacts">
+            <h2 class="contacts__title">Contacts</h2>
+            <div class="contacts-list">
+                <div class="contacts-item">
+                    <span>Phone <a href="tel:+79497372766">+79497372766</a></span>
+                    <button class="copy" onclick="copyToClipboard('+79497372766');">Copy</button>
+                </div>
+                <div class="contacts-item">
+                    <span>Email <a href="mailto:starchenkodmitrypavlovich@gmail.com">starchenkodmitrypavlovich@gmail.com</a></span>
+                    <button class="copy" onclick="copyToClipboard('starchenkodmitrypavlovich@gmail.com');">Copy</button>
+                </div>
+            </div>            
+        </div>
     </div>
 </body>
 </html>
