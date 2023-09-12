@@ -40,6 +40,9 @@ body{
 
     border-radius: 1000000px;
     border: .2em solid #fff;
+
+    
+    object-fit: cover;
 }
 .aboutme{
     flex: 1;
