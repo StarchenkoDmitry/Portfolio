@@ -3,7 +3,9 @@ body{
 
     background: #f3d5ff;
     background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
-    background: linear-gradient(to right, #ffb1dc, #ffddc6, #ffb1dc);
+    /* background: linear-gradient(to right, #ffb1dc, #ffddc6, #ffb1dc); */
+
+    background: linear-gradient(to right, #ffb1dc, #c5b2ff, #ffb1dc);
 }
 
 /* .page{

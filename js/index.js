@@ -46,10 +46,18 @@ pets.forEach(e=>{
     body.classList.add("body");
     item.appendChild(body);
 
+    
+    const aimg = document.createElement("a");
+    aimg.classList.add("imglink");
+    // aimg.target="_blank";
+    aimg.href = url;
+    body.appendChild(aimg);
+
     const img = document.createElement("img");
     img.classList.add("img");
     if(e.img){ img.src=e.img; }
-    body.appendChild(img);
+    aimg.appendChild(img);
+
     
     const footer = document.createElement("div");
     footer.classList.add("footer");

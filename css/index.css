@@ -421,6 +421,12 @@ body{
     height: 250px;
     overflow: hidden;
 }
+.works__item .imglink{
+
+    cursor: pointer;
+}
+
+
 
 
 @media screen and (max-width: 1000px) {
@@ -438,6 +444,11 @@ body{
         height:auto;
     }
 }
+
+
+
+
+
 
 
 
