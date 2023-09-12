@@ -243,13 +243,15 @@ body{
 }
 
 .languages li{
+    padding: 0.2em;
     color: #454545;
+    border-radius: 0.4em;
+    background-color: #f2e1ff;
     list-style-type: none;
 }
 .languages li + li{
     margin-top: .2em;
 }
-
 
 
 
