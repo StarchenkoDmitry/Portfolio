@@ -1,6 +1,6 @@
 const hash = window.location.hash;
 const res = hash.split("#")[1];
-console.log("hash: ",res)
+// console.log("hash: ",res)
 
 const namePet = res ? res : "";
 

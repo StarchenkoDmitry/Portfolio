@@ -4,7 +4,7 @@ pets.forEach(e=>{
     const url = location.origin + location.pathname+ 
     "pet.html#"+e.nameProject;
 
-    console.log("URL: ",url)
+    // console.log("URL: ",url)
     
     const item = document.createElement("div");
     item.classList.add("works__item");
