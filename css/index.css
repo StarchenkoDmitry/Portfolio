@@ -127,7 +127,8 @@ body{
 }
 .technologies_body div{
     margin: .2em;
-    background-color: #e9e9e9;
+    padding: .2em;
+    background-color: #f9e1ff;
 }
 
 
