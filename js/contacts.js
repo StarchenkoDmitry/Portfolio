@@ -1,6 +1,6 @@
 const wrapperContacts = document.querySelector(".wrapper-contacts");
 
-openContacts();
+// openContacts();
 
 wrapperContacts.onclick = e =>{
     if(e.target === wrapperContacts){
