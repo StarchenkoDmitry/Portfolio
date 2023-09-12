@@ -407,6 +407,7 @@ body{
 @media screen and (max-width: 1000px) {
     .works__item{
         width: 100%;
+        max-width: 650px;
     }
     .works__item .body{
         height:auto;
