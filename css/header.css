@@ -4,12 +4,36 @@
     justify-content: space-around;
     padding-top: 1em;
 }
+
+
 #myname{
+	position: relative;
     color: #fff;
     font-size: 1.75em;
-    /* font-family: 'Ubuntu', sans-serif; */
-    /* font-weight: 500; */
+    transition: all .3s;
 }
+#myname:hover{
+    color: #ff82c5;
+} 
+#myname::before{
+    position: absolute;
+	content: '';
+
+	left: 50%; 
+    bottom: -5px;
+    border-radius: 100px;
+	height: 5px;
+	width: 0%;
+    transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+    background-color: rgb(255, 255, 255);
+}
+#myname:hover::before {
+	left: 0;
+	width: 100%;
+}
+
+
+
 .header__nav{
     display: flex;
     align-items: center;
